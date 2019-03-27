@@ -5,7 +5,7 @@ node {
         git "https://github.com/apoorvanand/testjenkins.git"
     }
 
-    dir('/') {
+    dir('./') {
         stage("Install Requirements") {
             sh 'make install'
         }
