@@ -2,10 +2,10 @@ node {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
-        git "https://github.com/arnoldokoth/ActivityA"
+        git "https://github.com/apoorvanand/testjenkins.git"
     }
 
-    dir('Lesson5/ActivityA') {
+    dir('/') {
         stage("Install Requirements") {
             sh 'make install'
         }
